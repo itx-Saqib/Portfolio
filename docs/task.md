@@ -1,0 +1,108 @@
+# Task Tracker (Redesign Phase)
+
+- [x] Core Setup & Navigation
+  - [x] Convert `App.jsx` to single-page rendering.
+  - [x] Update `Navbar.jsx` to use anchor links and sticky behavior.
+  - [x] Create `animations/variants.js` for centralized Framer Motion logic.
+- [x] UI Components
+  - [x] Create `ParticleBackground.jsx` (Canvas animation).
+  - [x] Create reusable `SectionWrapper` for scroll animations.
+- [x] Sections (Content & Design)
+  - [x] `Home.jsx`: Magnetic buttons, typing text, professional intro.
+  - [x] `About.jsx`: Expanded content, stats, values.
+  - [x] `Projects.jsx`: 3D Tilt cards, tech stack, hover effects.
+  - [x] `Experience.jsx`: Vertical animated timeline.
+  - [x] `Skills.jsx`: Categorized grid, progress bars/badges.
+  - [x] `Services.jsx`: Premium grid with SVG icons.
+  - [x] `Education.jsx`: New timeline section.
+  - [x] `Contact.jsx`: Glassmorphic form.
+- [x] Final Review
+  - [x] Ensure all text is professional and engaging (No Lorem Ipsum).
+  - [x] Ensure mobile responsiveness.
+- [x] Icon Audit & Fix
+  - [x] Scan all files for invalid react-icons imports.
+  - [x] Identify `SiCss3` (missing) → replaced with `SiCss`.
+  - [x] Identify `SiVscode` (missing) → replaced with `TbBrandVscode` from `react-icons/tb`.
+  - [x] Runtime-validated all 41 icons resolve correctly.
+  - [x] Confirmed zero Vite import errors remaining.
+- [x] Experience Section Removed
+  - [x] Deleted `src/pages/Experience.jsx`.
+  - [x] Removed Experience import from `App.jsx`.
+  - [x] Removed 'Experience' nav link from `Navbar.jsx`.
+  - [x] Verified zero broken import references remain.
+- [x] Contact Section Updated
+  - [x] Replaced all placeholder contact data with real info.
+  - [x] Email: devwithsaqib@gmail.com
+  - [x] Phone: +92 314 3142813
+  - [x] Location: Faisalabad, Pakistan
+- [x] Navigation Updated
+  - [x] Order: Home → About → Work → Skills → Services → Education → Contact
+- [x] Environment Configuration
+  - [x] Created `.env` and `.env.example`.
+  - [x] Added `VITE_LINKEDIN_URL` and `VITE_GITHUB_URL`.
+  - [x] Verified `.gitignore` includes `.env`.
+  - [x] Updated Footer and Contact components to use `import.meta.env` for social links.
+- [x] Hero Section Cleanup
+  - [x] Removed "Get in Touch" button from Hero.
+  - [x] Made "Download Resume" the sole primary CTA.
+  - [x] Cleaned up unused imports in `Home.jsx`.
+- [x] Contact Section Cleanup
+  - [x] Removed "Connect with me" (LinkedIn) and "View my code" (GitHub) buttons from Contact.
+  - [x] Cleaned up unused imports in `Contact.jsx`.
+- [x] Hero Section Redesign
+  - [x] Updated name to "M. Saqib".
+  - [x] Implemented custom `TypewriterEffect` hook for dynamic roles.
+  - [x] Extracted roles to `constants/hero.js`.
+  - [x] Updated Hero introduction text.
+  - [x] Added animated Scroll Down indicator.
+  - [x] Reduced Hero image size and updated profile image logic.
+- [x] Contact Form Integration
+  - [x] Integrated Formspree endpoint via `VITE_FORMSPREE_ENDPOINT`.
+  - [x] Added form state (idle, loading, success, error) and validation.
+- [x] Instagram Integration & Spacing Fixes
+  - [x] Added `VITE_INSTAGRAM_URL` to `.env` configurations.
+  - [x] Integrated Instagram icon into `Footer`.
+  - [x] Re-added social links (GitHub, LinkedIn, Instagram) below Contact cards.
+  - [x] Standardized spacing between Contact cards.
+- [x] Navbar Branding Update
+  - [x] Created reusable `Logo.jsx` component.
+  - [x] Replaced plain text with animated `FiCode` + "MSF" brand identity.
+- [x] Hero Image Redesign
+  - [x] Converted to perfect circle format.
+  - [x] Moved image to the right column (below text on mobile).
+  - [x] Updated to use real `src/assets/Saqib.jpeg` image.
+  - [x] Resized to 320x320px to maximize visibility while retaining perfect responsive scaling.
+  - [x] Shifted 150px downward below the Navbar for improved top clearance.
+- [x] Global Router & Quality
+  - [x] Updated React Router `BrowserRouter` with v7 future flags (`v7_startTransition`, `v7_relativeSplatPath`) to resolve console warnings.
+  - [x] Generated custom purple/cyan `favicon.svg` (`</> MSF`) and replaced default Vite icon.
+- [x] About Section Refactor
+  - [x] Removed redundant profile image.
+  - [x] Expanded text area and re-aligned cards to utilize freed space.
+- [x] Rename Section
+  - [x] Renamed "Work" to "Projects" across Navbar and section headings.
+- [x] Projects Section Overhaul
+  - [x] Created `src/constants/projects.js` — single source of truth for all project data.
+  - [x] Created reusable `ProjectCard.jsx` with gradient border, status badge, staggered animations.
+  - [x] Added **MediFlow** (Medical Store Management System) as project #1 with live demo link.
+  - [x] GitHub button reads URL from `VITE_GITHUB_URL` env variable.
+  - [x] Updated MediFlow GitHub URL to use `VITE_MEDIFLOW_GITHUB_URL` from `.env`.
+  - [x] Imported `src/assets/MediFlow.png` and rendered it in `ProjectCard.jsx` with a smooth hover zoom.
+- [x] Skills Section Update
+  - [x] Extracted hardcoded skills array from `Skills.jsx` into `src/constants/skills.jsx` as a centralized source of truth.
+  - [x] Added **PostgreSQL** to the Database category using `SiPostgresql`.
+  - [x] Added **Figma** to the Tools & Others category using `SiFigma`.
+  - [x] Removed **Redux Toolkit** and added **Next.js** to the Frontend category.
+- [x] Portfolio Project Update
+  - [x] Imported `src/assets/Portfolio.png` and added it to the Developer Portfolio project in `projects.js`.
+
+- [x] Hero Profile Image: Implemented premium multi-layered design with conic gradient, glassmorphism blobs, glowing particles, and code bracket accent.
+
+- [x] Education Update: Swapped JavaScript for TypeScript in SMIT course, added React Native, and updated description to reflect mobile app dev module progress.
+
+- [x] UI Updates: Added cursor-pointer to all interactive cards to improve UX feedback.
+- [x] Education Updates: Updated course completion years to 2025/2026 and improved timeline badge UI.
+
+- [x] Content Updates: Added Cursor AI to Education section and updated SMIT AI-Driven description.
+
+- [x] Content Updates: Updated Project #2 to VYBE AI with new Next.js & Supabase tech stack and 'In Development' status.
