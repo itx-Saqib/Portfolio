@@ -13,11 +13,12 @@
  *   accentColor — Tailwind gradient classes used for the animated top border
  */
 
+import mediflowImg from '../assets/MediFlow.png';
+import sonyImg from '../assets/sony-wh-1000.png';
+
 const GITHUB = import.meta.env.VITE_GITHUB_URL;
 const MEDIFLOW_GITHUB = import.meta.env.VITE_MEDIFLOW_GITHUB_URL;
-
-import mediflowImg from '../assets/MediFlow.png';
-import portfolioImg from '../assets/Portfolio.png';
+const SONY_GITHUB = import.meta.env.VITE_SONY_GITHUB_URL;
 
 const projects = [
   {
@@ -51,15 +52,15 @@ const projects = [
     accentColor: "from-cyan-400 via-blue-500 to-indigo-500",
   },
   {
-    title: "Developer Portfolio",
-    subtitle: "Personal Brand & Showcase",
-    desc: "A premium, animated single-page portfolio built with React and Framer Motion, featuring a particle background engine, typewriter roles, and glassmorphism UI.",
-    tech: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
-    github: `${GITHUB}/portfolio`,
-    live: null,
+    title: "Sony WH-1000XM6 Landing Page",
+    subtitle: "Premium Product Showcase",
+    desc: "A highly interactive, visually striking product landing page for the Sony WH-1000XM6 headphones. Built with a focus on premium aesthetics, featuring smooth scroll animations, glassmorphism UI elements, and a responsive modern layout.",
+    tech: ["React.js", "Tailwind CSS", "Framer Motion", "Vite"],
+    github: SONY_GITHUB,
+    live: "https://sony-wh-1000-xm-6-one.vercel.app/",
     status: "Completed",
-    accentColor: "from-rose-400 via-pink-500 to-purple-500",
-    image: portfolioImg,
+    accentColor: "from-gray-300 via-slate-400 to-zinc-500",
+    image: sonyImg,
   },
 ];
 

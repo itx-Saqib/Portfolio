@@ -19,8 +19,8 @@ const contactInfo = [
   {
     icon: <FiPhone size={22} />,
     label: "Phone",
-    value: "+92 314 3142813",
-    href: "tel:+923143142813",
+    value: "+92 321 5831101",
+    href: "tel:+923215831101",
     isLink: true,
   },
   {
