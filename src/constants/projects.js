@@ -22,12 +22,25 @@ const MEDIFLOW_GITHUB = import.meta.env.VITE_MEDIFLOW_GITHUB_URL;
 const SONY_GITHUB = import.meta.env.VITE_SONY_GITHUB_URL;
 
 const projects = [
+  // 1 — Sony WH-1000XM6 Landing Page
+  {
+    title: "Sony WH-1000XM6 Landing Page",
+    subtitle: "Premium Product Showcase",
+    desc: "A highly interactive, visually striking product landing page for the Sony WH-1000XM6 headphones. Built with a focus on premium aesthetics, featuring smooth scroll animations, glassmorphism UI elements, and a responsive modern layout.",
+    tech: ["React.js", "Tailwind CSS", "Framer Motion", "Vite"],
+    github: SONY_GITHUB,
+    live: "https://sony-wh-1000-xm-6-one.vercel.app/",
+    status: "Completed",
+    accentColor: "from-gray-300 via-slate-400 to-zinc-500",
+    image: sonyImg,
+  },
+  // 2 — MediFlow
   {
     title: "MediFlow",
     subtitle: "Medical Store Management System",
     desc: "A full-stack pharmacy management system with secure JWT authentication, role-based access control, medicine inventory, customer management, and a responsive admin dashboard. Built with production-ready architecture and a clean REST API.",
     tech: [
-      "React.js", "Redux Toolkit", "Tailwind CSS",
+      "React.js", "Tailwind CSS",
       "Node.js", "Express.js", "MongoDB",
       "JWT", "Axios", "Framer Motion",
     ],
@@ -37,6 +50,7 @@ const projects = [
     accentColor: "from-violet-500 via-purple-500 to-cyan-400",
     image: mediflowImg,
   },
+  // 3 — VYBE AI
   {
     title: "VYBE AI",
     subtitle: "AI-Powered Productivity Platform",
@@ -50,17 +64,6 @@ const projects = [
     status: "In Development",
     accentColor: "from-cyan-400 via-blue-500 to-indigo-500",
     image: vybeImg,
-  },
-  {
-    title: "Sony WH-1000XM6 Landing Page",
-    subtitle: "Premium Product Showcase",
-    desc: "A highly interactive, visually striking product landing page for the Sony WH-1000XM6 headphones. Built with a focus on premium aesthetics, featuring smooth scroll animations, glassmorphism UI elements, and a responsive modern layout.",
-    tech: ["React.js", "Tailwind CSS", "Framer Motion", "Vite"],
-    github: SONY_GITHUB,
-    live: "https://sony-wh-1000-xm-6-one.vercel.app/",
-    status: "Completed",
-    accentColor: "from-gray-300 via-slate-400 to-zinc-500",
-    image: sonyImg,
   },
 ];
 
