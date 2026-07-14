@@ -49,7 +49,7 @@ const Home = () => {
           <SocialLinks className="mb-10 justify-center lg:justify-start" />
           
           <motion.div variants={fadeUpVariant} className="flex justify-center lg:justify-start flex-wrap gap-5">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 bg-text-primary text-background-primary px-8 py-4 rounded-full font-semibold hover:bg-accent transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]">
+            <a href="/Saqib-Resume.pdf" download="Saqib-Resume.pdf" className="group flex items-center gap-2 bg-text-primary text-background-primary px-8 py-4 rounded-full font-semibold hover:bg-accent transition-all duration-300 transform hover:-translate-y-1 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]">
               <FiDownload className="group-hover:-translate-y-1 transition-transform" />
               Download Resume
             </a>

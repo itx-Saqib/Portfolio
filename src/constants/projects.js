@@ -15,6 +15,7 @@
 
 import mediflowImg from '../assets/MediFlow.png';
 import sonyImg from '../assets/sony-wh-1000.png';
+import vybeImg from '../assets/vybe-ai.png';
 
 const GITHUB = import.meta.env.VITE_GITHUB_URL;
 const MEDIFLOW_GITHUB = import.meta.env.VITE_MEDIFLOW_GITHUB_URL;
@@ -41,15 +42,14 @@ const projects = [
     subtitle: "AI-Powered Productivity Platform",
     desc: "VYBE AI is an AI-powered productivity platform that integrates multiple AI services into a single modern web application. The platform is designed to help users perform AI-assisted tasks such as intelligent conversations, workflow automation, voice processing, image editing, and content generation from one centralized dashboard. The project is being built with a strong focus on scalability, performance, clean architecture, and an exceptional user experience.",
     tech: [
-      "Next.js", "React.js", "Tailwind CSS", "Redux Toolkit", "Framer Motion", 
-      "Formik", "Yup", "Supabase", "OpenAI API", "Google Gemini API", 
-      "Apify API", "Google Flow API", "Voice-to-Text API", "Text-to-Speech API", 
-      "Background Remover API", "Vercel"
+      "Next.js", "Tailwind CSS", "TypeScript",
+      "Node.js", "Express.js", "MongoDB", "AI APIs"
     ],
-    github: null,
-    live: null,
+    github: "https://github.com/itx-Saqib/VYBE_AI",
+    live: "https://vybe-ai-orpin.vercel.app/",
     status: "In Development",
     accentColor: "from-cyan-400 via-blue-500 to-indigo-500",
+    image: vybeImg,
   },
   {
     title: "Sony WH-1000XM6 Landing Page",
