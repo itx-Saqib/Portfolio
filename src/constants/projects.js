@@ -16,6 +16,7 @@
 import mediflowImg from '../assets/MediFlow.png';
 import sonyImg from '../assets/sony-wh-1000.png';
 import vybeImg from '../assets/vybe-ai.png';
+import auraLuxeImg from '../assets/aura-luxe.png';
 
 const GITHUB = import.meta.env.VITE_GITHUB_URL;
 const MEDIFLOW_GITHUB = import.meta.env.VITE_MEDIFLOW_GITHUB_URL;
@@ -50,7 +51,22 @@ const projects = [
     accentColor: "from-violet-500 via-purple-500 to-cyan-400",
     image: mediflowImg,
   },
-  // 3 — VYBE AI
+  // 3 — AURA Luxe
+  {
+    title: "AURA Luxe",
+    subtitle: "Premium Fashion & Lifestyle E-Commerce",
+    desc: "A full-featured luxury e-commerce platform built with Next.js, offering a premium shopping experience across fashion, footwear, timepieces, and fragrances. Features a dynamic hero carousel with Swiper.js, product filtering, wishlist, cart, dark mode, and a sleek amber-accented design system.",
+    tech: [
+      "Next.js", "Tailwind CSS", "TypeScript",
+      "Swiper.js", "DummyJSON API", "Vercel"
+    ],
+    github: "https://github.com/itx-Saqib/new_Ecommerce",
+    live: "https://new-ecommerce-mu.vercel.app/",
+    status: "Completed",
+    accentColor: "from-amber-400 via-orange-500 to-yellow-400",
+    image: auraLuxeImg,
+  },
+  // 4 — VYBE AI
   {
     title: "VYBE AI",
     subtitle: "AI-Powered Productivity Platform",

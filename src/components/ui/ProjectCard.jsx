@@ -54,7 +54,7 @@ const ProjectCard = ({ project, index }) => {
 
       {/* Image Thumbnail */}
       {project.image && (
-        <div className="relative h-48 w-full overflow-hidden border-b border-white/[0.08]">
+        <div className="relative h-36 w-full overflow-hidden border-b border-white/[0.08]">
           <motion.img 
             src={project.image} 
             alt={title} 
@@ -65,10 +65,10 @@ const ProjectCard = ({ project, index }) => {
       )}
 
       {/* Card Body */}
-      <div className="relative flex flex-col flex-grow p-7">
+      <div className="relative flex flex-col flex-grow p-5">
 
         {/* Header row: status badge */}
-        <div className="flex items-center justify-between mb-5">
+        <div className="flex items-center justify-between mb-3">
           <StatusBadge status={status} />
         </div>
 
@@ -78,17 +78,17 @@ const ProjectCard = ({ project, index }) => {
                        group-hover:from-violet-400 group-hover:to-cyan-400 transition-all duration-300">
           {title}
         </h3>
-        <p className="text-xs text-text-muted font-medium tracking-wide uppercase mb-4">
+        <p className="text-xs text-text-muted font-medium tracking-wide uppercase mb-2">
           {subtitle}
         </p>
 
         {/* Description */}
-        <p className="text-text-muted text-sm leading-relaxed mb-6 flex-grow">
+        <p className="text-text-muted text-sm leading-relaxed mb-4 flex-grow line-clamp-3">
           {desc}
         </p>
 
         {/* Tech Badges */}
-        <div className="flex flex-wrap gap-1.5 mb-6">
+        <div className="flex flex-wrap gap-1 mb-4">
           {tech.map((t) => (
             <span
               key={t}
@@ -103,7 +103,7 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-3 pt-5 border-t border-white/[0.07] mt-auto">
+        <div className="flex items-center gap-3 pt-4 border-t border-white/[0.07] mt-auto">
           {github && (
             <a
               href={github}

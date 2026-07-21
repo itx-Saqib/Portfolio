@@ -12,8 +12,6 @@ import {
   SiNodedotjs,
   SiExpress,
   SiMongodb,
-  SiSupabase,
-  SiPostgresql,
   SiGit,
   SiGithub,
   SiPostman,
@@ -54,8 +52,6 @@ const skillCategories = [
     icon: <FiCode size={24} />,
     skills: [
       { name: "MongoDB",         icon: <SiMongodb       className="text-[#47A248]" /> },
-      { name: "Supabase",        icon: <SiSupabase      className="text-[#3ECF8E]" /> },
-      { name: "PostgreSQL",      icon: <SiPostgresql    className="text-[#4169E1]" /> },
     ]
   },
   {
